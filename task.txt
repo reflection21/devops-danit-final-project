@@ -1,0 +1,38 @@
+1.Створіть репозиторій GitHub, який міститиме:
+    * тестовий Python backend сервер. Простий скрипт, що слухає певний порт і повертає статус 200 на запит /
+    * Dockerfile з усім необхідним для запуску цього скрипта;
+    * GitHub Action, який автоматично збирає Docker-образ і завантажує його до Docker Hub. Використай GitHub Secrets для зберігання облікових даних Docker Hub.
+
+2.Використайте Terraform для створення EKS-кластера (https://gitlab.com/dan-it/groups/devops_soft/-/tree/main/step-final/EKS?ref_type=heads)
+    * одна node group з одним node;
+    * встановлений nginx ingress controller.
+
+3.Напишіть код Terraform, який встановить ArgoCD у EKS за допомогою helm chart або звичайних k8s manifest.
+    * ArgoCD повинен мати DNS-ім’я у домені: devops1.test-danit.com (замініть devops1 на номер вашої групи). Приклад: argocd.student1.devops1.test-danit.com де student1 — це назва вашого кластера.
+
+4.Напишіть Kubernetes manifests для розгортання вашого застосунку з пункту 1 у EKS:
+    * deployment, service, ingress;
+    * застосунок має бути доступний за DNS-ім’ям у домені: devops1.test-danit.com (замініть devops1 на номер вашої групи).
+Приклад: app.student1.devops1.test-danit.com 
+
+5.Напишіть застосунок ArgoCD, який буде доставляти код із пункту 4 до EKS і автоматично оновлювати його при кожному новому коміті.
+
+
+
+Формат здачі:
+
+1. Код backend сервера (бажано, щоб код передавав IP адресу пода)
+
+2. Код Dockerfile
+
+3. Код GitHub або GitLab пайплайну (дивлячись, який вибрали для автоматизації, за власним бажанням)
+
+4. Код створення кластера, nginx controller, etc.
+
+5. Код підняття ArgoCD
+
+6. Код маніфестів
+
+7. Скріни роботи кластера, неймспейсів, роботи ArgoCD, конфірурації ArgoCD, зміни імеджів в Docker Hub, etc.
+
+8. Скріни виконання завдання по пунктах (для захисту проєкту)
