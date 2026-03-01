@@ -17,5 +17,5 @@ variable "iam_profile" {
   default     = null
 }
 
-variable "zone_name" {
+variable "domain_name" {
 }
