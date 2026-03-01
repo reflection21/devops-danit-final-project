@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: "https://github.com/reflection21/devops-danit-final-project/kubernetes"
     targetRevision: main
-    path: app
+    path: kubernetes/app
   destination:
     server: https://kubernetes.default.svc
     namespace: python-app
