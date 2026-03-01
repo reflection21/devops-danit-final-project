@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://github.com/reflection21/devops-danit-final-project/kubernetes"
+    repoURL: "https://github.com/reflection21/devops-danit-final-project"
     targetRevision: main
     path: kubernetes/app
   destination:
