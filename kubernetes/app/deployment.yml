@@ -20,8 +20,6 @@ spec:
       labels:
         app: python
     spec:
-      imagePullSecrets:
-        - name: dockerhub-secret
       containers:
         - name: python-app
           image: sweaty1111/python-app:latest
