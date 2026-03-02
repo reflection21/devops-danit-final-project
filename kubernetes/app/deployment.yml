@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: sweaty1111/python-app:latest
+          image: sweaty1111/python-app:7d5f2b7bd7a4ede7a9e94fcf6b33412530812daf
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
