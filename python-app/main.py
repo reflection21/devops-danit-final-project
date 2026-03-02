@@ -13,6 +13,6 @@ def get_ip():
         ip = "Unable to determine via hostname"
 
     return {
-        "hostnamesssss": hostname,
+        "hostnamesssssssssssssss": hostname,
         "ip": ip,
     }
